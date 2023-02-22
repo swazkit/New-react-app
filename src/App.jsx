@@ -16,7 +16,7 @@ const App = () => (
       </div>
     </div>
 
-    <div className={`bg-slate-800 ${styles.paddingX} ${styles.flexStart}`}>
+    <div className={`${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Stats />
         <Business />
