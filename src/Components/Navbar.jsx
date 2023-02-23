@@ -6,11 +6,11 @@ import { navLinks } from '../constants'
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className="text-white w-full flex py-6 justify-between items-center navbar">
+    <nav className="text-white w-full flex py-6 justify-between items-center navbar hide">
       <img src={logo} alt="HooBank" className='w-[124px] h-[32px]'/>
       <ul className='list-none sm:flex hidden justify-end items-center flex-1 gap-16'>
         {navLinks.map((nav, index) => (
-          <li key={nav.id} className={`font-poppins font-normal text-[16px]`}>
+          <li key={nav.id} className={`font-poppins font-normal text-[16px] relative z-[5]`}>
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}

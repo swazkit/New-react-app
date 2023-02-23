@@ -167,3 +167,10 @@
     filter: blur(750px);
   }
   
+.footer-color {
+  background-color: rgba(11, 10, 12, .6);
+}
+
+.hide {
+  overflow-x: hidden;
+}
